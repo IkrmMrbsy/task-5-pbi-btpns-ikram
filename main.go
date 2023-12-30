@@ -9,5 +9,5 @@ import (
 func main() {
 	app.Init()
 	r := router.SetupRouter()
-	r.Run(":8080")
+	r.Run(":0")
 }

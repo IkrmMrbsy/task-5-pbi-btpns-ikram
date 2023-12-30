@@ -14,7 +14,7 @@ var (
 
 func InitDB() {
 	var err error
-	dsn := "appuser@tcp(127.0.0.1:3306)/photoapp_api?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "apkuser@tcp(127.0.0.1:3306)/app_api?charset=utf8mb4&parseTime=True&loc=Local"
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {
